@@ -1,0 +1,98 @@
+<!--<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent" tools:context="dk.jpeace.jan.galgeleg.FragmentSpillet">-->
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0793b"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:id="@+id/textViewFSheader"
+        android:text="@string/overskrift_fragment_spil" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/TextViewFSordVisning"
+        android:text="- - -"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/textViewFSbrugteBogstaver"
+        android:text="_____"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageViewetFS"
+        android:layout_weight="1"
+        android:contentDescription="galgeimage"
+        android:adjustViewBounds="true"
+        android:maxWidth="100dp"
+        android:maxHeight="100dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/forkert6"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:id="@+id/TextViewFragSpilTest1"
+        android:text=" test test test"/>
+
+
+    <!--<FrameLayout-->
+        <!--android:id="@+id/fragmentindhold"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_weight="0"/>-->
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f0f0df51"
+        android:orientation="horizontal">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLength="1"
+        android:layout_weight="2"
+        android:id="@+id/editTextBogstav"
+         />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:text="Gæt bogstav"
+        android:layout_weight="3"
+        android:id="@+id/buttonGætBogstav"
+        />
+</LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/textViewFSbottom"
+        android:text="status"/>
+
+
+</LinearLayout>
+
+<!--</FrameLayout>-->

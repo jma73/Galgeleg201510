@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+
+    android:background="#907c47"
+
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/TextViewHeaderStatus"
+        android:text="Nedenfor er et FrameLayout til fragmenter"/>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:background="#907c00"
+        android:layout_height="wrap_content">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Spil"
+        android:id="@+id/buttonStartSpil"
+        android:layout_gravity="center_horizontal|left" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Indstillinger"
+        android:id="@+id/buttonForside"
+        android:layout_gravity="center_horizontal|right" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Luk indst."
+
+            android:id="@+id/buttonForsideLuk"
+            android:layout_gravity="center_horizontal|right" />
+</LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fragmentindhold"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#31904f"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#88908331"
+            android:text="Hva' skal der stå her? Men dette er så FrameLayout i Aktiviteten activity_forside2.
+            Hvis du ikke ved hvad du skal gøre - så start spillet!\n
+            Eller måske gå i menuen og vælg det ord du vil ''gætte''
+            Eller hent flere ord.
+            "/>
+
+        </FrameLayout>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Her er en bundtekst, f.eks en status"/>
+
+</LinearLayout>
+

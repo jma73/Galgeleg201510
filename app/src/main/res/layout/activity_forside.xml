@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="dk.jpeace.jan.galgeleg.ForsideActivity">
+
+    <TextView android:text="Velkommen til Galgeleg" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4" />
+
+    <FrameLayout
+        android:layout_width="71dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/frameLayout2">
+
+        <FrameLayout
+            android:id="@+id/fragmentindhold"
+            android:layout_width="276dp"
+            android:layout_height="343dp"
+            android:background="@color/abc_search_url_text_normal"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start galgeleg"
+        android:id="@+id/buttonStartSpil"
+        android:layout_marginTop="40dp"
+        />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Indstillinger"
+        android:id="@+id/buttonIndstillinger"
+        android:layout_weight="0"/>
+
+    />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/forkert6"
+
+        android:layout_weight="0"/>
+
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Opdater ordliste"
+        android:id="@+id/buttonHentOrdWeb"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="----"
+        android:id="@+id/textViewDateTime"
+        android:layout_below="@+id/textView4"
+        />
+
+
+
+</LinearLayout>

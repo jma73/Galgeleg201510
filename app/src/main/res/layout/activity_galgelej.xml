@@ -1,0 +1,159 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".GalgelejActivity"
+
+    android:backgroundTint="#b2ffff">
+
+    <TextView android:text="Galgeleg" android:layout_width="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Spil"
+        android:id="@+id/buttonSpil"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#55cc55"
+        android:text="brugte bogstaver:"
+        android:id="@+id/textView"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="********"
+        android:id="@+id/textViewSynligtOrd"
+        android:layout_below="@+id/buttonSpil"
+        android:layout_alignLeft="@+id/buttonGætBogstav"
+        android:layout_alignStart="@+id/buttonGætBogstav"
+        android:layout_alignRight="@+id/buttonSpil"
+        android:layout_alignEnd="@+id/buttonSpil" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Gæt et bogstav:"
+        android:id="@+id/textView3"
+        android:layout_alignBaseline="@+id/buttonGætBogstav"
+        android:layout_alignBottom="@+id/buttonGætBogstav"
+        android:layout_toLeftOf="@+id/editTextBogstav"
+        android:layout_toStartOf="@+id/editTextBogstav" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageViewet"
+        android:contentDescription="galgeimage"
+        android:src="@drawable/forkert6"
+        android:layout_below="@+id/buttonGætBogstav"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+        <!--
+                android:layout_below="@+id/buttonGæt"
+
+
+        android:layout_alignLeft="@+id/textViewOrdet"
+        android:layout_alignStart="@+id/textViewOrdet"
+        />
+        -->
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="[]"
+        android:id="@+id/textViewBrugteBogst"
+        android:layout_below="@+id/textView"
+        />
+
+    <!--android:layout_alignTop="@+id/textView"
+    android:layout_toRightOf="@+id/textView"
+    />-->
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLength="1"
+
+        android:id="@+id/editTextBogstav"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_toLeftOf="@+id/textViewSynligtOrd"
+        android:layout_toStartOf="@+id/textViewSynligtOrd" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#D3D3D3"
+        android:text="&lt;ordet>"
+        android:id="@+id/textViewOrdet"
+        android:layout_alignParentBottom="true"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Gæt bogstav"
+        android:id="@+id/buttonGætBogstav"
+        android:layout_below="@+id/textViewSynligtOrd"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small debug Text"
+        android:id="@+id/textViewDebug"
+        android:layout_alignTop="@+id/textViewOrdet"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextGætOrdet"
+        android:layout_below="@+id/buttonGætOrdet"
+        />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gæt ordet"
+        android:id="@+id/buttonGætOrdet"
+
+        android:layout_alignTop="@+id/imageViewet"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/textViewFinishedStatus"
+
+        android:layout_below="@+id/imageViewet"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
